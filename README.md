@@ -62,7 +62,8 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 - [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
 - xml (enabled by default - don't turn it off)
 
-
+put this code on this following location
+C:\xampp\apache\conf\extra\httppd-vhosts.conf
 
 <VirtualHost *:80>
     ServerAdmin vedarth.localhost
