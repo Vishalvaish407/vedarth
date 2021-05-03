@@ -48,12 +48,12 @@
           <li class="active"><a href="/"><i class="fa fa-home text-theme-color-blue"></i> Home</a></li>
           <li class=""><a href="<?=site_url("/home/about") ?>">About Us</a></li>
           <!-- <li class=""><a href="our-team.html">Our Team</a></li> -->
-          <li class=""><a href="training-programs.html">Training Programs</a></li>
+          <li class=""><a href="<?=site_url("home/training-programs")?>">Training Programs</a></li>
           <!-- <li class=""><a href="yoga-studios.html">Yoga Studios</a></li> -->
-          <li class=""><a href="gallery.html">Gallery</a></li>
+          <li class=""><a href="<?=site_url("/home/gallery")?>">Gallery</a></li>
           <!-- <li class=""><a href="offers.html">Offers</a></li>
            <li><a href="blog/index.html">Blog</a></li> -->
-          <li class=""><a href="contact.html">Contact Us</a></li>
+          <li class=""><a href="<?=site_url("/home/contact")?>">Contact Us</a></li>
         </ul>
         <div class="pull-right sm-pull-none mb-sm-15"> 
           <!-- <a class="btn btn-colored btn-flat btn-theme-colored mt-15 mt-sm-10 pt-10 pb-10" style="margin-right: 12px;" href="http://www.bodhiyogainstitute.com/offers/">Offers!</a>--> 

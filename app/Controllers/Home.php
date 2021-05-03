@@ -9,21 +9,22 @@ class Home extends BaseController
 		return view('index');
 	}
 
-	public function contactus(){
-		return view('contactus');
+	public function contact(){
+		return view('contact');
 	} 
 
 	public function about(){
 		return view('about');
 	} 
 
-	public function news(){
-		return view('news');
+	public function gallery(){
+		return view('gallery');
+	}
+	
+	public function trainingprograms(){
+		return view('trainingprograms');
 	} 
 
-	public function images(){
-		return view('images');
-	} 
-
+	
 	
 }
