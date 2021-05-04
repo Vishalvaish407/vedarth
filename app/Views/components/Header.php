@@ -48,7 +48,7 @@
           <li class="active"><a href="/"><i class="fa fa-home text-theme-color-blue"></i> Home</a></li>
           <li class=""><a href="<?=site_url("/home/about") ?>">About Us</a></li>
           <!-- <li class=""><a href="our-team.html">Our Team</a></li> -->
-          <li class=""><a href="<?=site_url("home/training-programs")?>">Training Programs</a></li>
+          <li class=""><a href="<?=site_url("home/trainingprograms")?>">Training Programs</a></li>
           <!-- <li class=""><a href="yoga-studios.html">Yoga Studios</a></li> -->
           <li class=""><a href="<?=site_url("/home/gallery")?>">Gallery</a></li>
           <!-- <li class=""><a href="offers.html">Offers</a></li>
