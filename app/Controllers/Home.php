@@ -22,7 +22,9 @@ class Home extends BaseController
 	}
 	
 	public function trainingprograms(){
-		return view('trainingprograms');
+		$coursesModel = new \App\Models\CoursesModel();
+		$data = $coursesModel->findAll();
+		return view('trainingprograms', ["coursesData"=>$data]);
 	} 
 
 	
