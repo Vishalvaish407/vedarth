@@ -5,8 +5,9 @@ namespace App\Controllers;
 class Home extends BaseController
 {
 	public function index()
-	{
-		return view('index');
+	{   $coursesModel = new \App\Models\CoursesModel();
+		$data = $coursesModel->findAll();
+		return view('index', ["coursesData"=>$data]);
 	}
 
 	public function contact(){
@@ -27,6 +28,10 @@ class Home extends BaseController
 		return view('trainingprograms', ["coursesData"=>$data]);
 	} 
 
-	
+	public function detailPage($id){
+		$coursesModel = new \App\Models\CoursesModel();
+		$data = $coursesModel->find($id);
+		return view('detailpage',["courseData"=>$data]);
+	}
 	
 }

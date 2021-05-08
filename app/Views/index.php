@@ -594,274 +594,65 @@ fbq('track', 'PageView');
     </div>
   </section>
   <!-- Section: Courses -->
+  
   <section>
-    <div class="container pb-20">
-      <div class="section-title text-center">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <h2 class="mt-0">Our <span class="text-theme-colored">Special Training Programmes</span><br> for Yoga Teachers</h2>
-            <div class="title-icon"> <img class="mb-10" src="images/title-icon.png" alt="title-icon"> </div>
-            <p><br>
-            </p>
+        <div class="container pb-20">
+          <div class="section-title text-center">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <h2 class="mt-0">Our <span class="text-theme-colored">Special Training Programmes</br>
+for Yoga Teachers</span></h2>
+                <div class="title-icon">
+                  <img class="mb-10" src="<?=site_url("images/title-icon.png")?>" alt="">
+                </div>
+                <p><br></p>
+              </div>
+            </div>
+          </div>
+          <div class="section-content">
+            <div class="row">
+            
+            <?php foreach($coursesData as $courseData): ?>
+              <div class="col-xs-12 col-sm-6 col-md-3 mb-30">
+                <div class="box-hover-effect thumb-cross-effect" style="padding: 2px;border: 2px solid #e89090;border-radius: 4px;box-shadow: 5px 5px 3px 0px #7d7d7d;text-align: center;">
+                  <div class="effect-wrapper">
+                    <div class="thumb" style="width:250px; height:250px;">
+                      <img class="img-fullwidth" src="<?=site_url("images/courses/".$courseData['image']."")?>" alt="project">
+                    </div>
+                    <div class="text-holder text-holder-top-right">
+
+                      <div class="title text-theme-colored2 font-22">
+
+                      </div>
+                    </div>
+                  </div>
+                  <h3 style="background: #228816;margin-top: 0px;color: #fff !important;    text-align: center;"><?=$courseData['name']?></h3>
+                  <ul class="list-inline mb-10" style="font-weight: 600;color: #000;">
+                    <!--<li>  <i class="fa fa-clock-o mr-5"> 02 JAN TO 15 FEB 2018</i>  </li>
+                  <li>|</li>-->
+                    <li>Duration :<?=$courseData['duration']?></li>
+                  </ul>
+                  <p style="height:180px;text-overflow: ellipsis;overflow: hidden;"><?=$courseData['description']?></p>
+                  <ul class="mb-5 font-16">
+                    <li></li>
+                  </ul>
+                  <a class="btn btn-dark btn-theme-colored hvr-bob"
+                    href="<?=site_url("/home/detailPage/".$courseData['id']."")?>">Know
+                    More..</a>
+
+                </div>
+              </div>
+
+              <?php endforeach; ?>
+
+
+            </div>
           </div>
         </div>
-      </div>
-      <div class="section-content">
-        <div class="row">
-          <!--<div class="col-xs-12 col-sm-6 col-md-3 mb-30">
-            <div class="box-hover-effect thumb-cross-effect" style="
-    padding: 2px;
-    border: 2px solid #e89090;
-    border-radius: 4px;
-    box-shadow: 5px 5px 3px 0px #7d7d7d;text-align: center;
-">
-              <div class="effect-wrapper">
-                <div class="thumb"> <img class="img-fullwidth" src="images/courses/1.jpg" alt="project"> </div>
-                <div class="text-holder text-holder-top-right">
-                  <div class="title text-theme-colored2 font-22"> </div>
-                </div>
-              </div>
-              <h3 style="
-    background: #228816;
-    margin-top: 0px;
-    color: #fff !important;    text-align: center;
-">Yoga Teacher Training, -RYT 200</h3>
-              <ul class="list-inline mb-10" style="
-    font-weight: 600;
-    color: #000;
-">
-                <li>Duration :6 weeks</li>
-              </ul>
-              <p>Teachers can register as a RYT® 200 if they have successfully completed a 200-hour yoga teacher training program that is registered with Yoga Alliance. All training hours must come from the same school and multiple trainings cannot be combined to meet the 200-hour Requirement.</p>
-              <ul class="mb-5 font-16">
-                <li></li>
-              </ul>
-              <a class="btn btn-dark btn-theme-colored hvr-bob" href="yoga-teacher-training-ryt200.html" >Know More..</a> </div>
-          </div>-->
-          <!--<div class="col-xs-12 col-sm-6 col-md-3 mb-30">
-            <div class="box-hover-effect thumb-cross-effect" style="
-    padding: 2px;
-    border: 2px solid #e89090;
-    border-radius: 4px;
-    box-shadow: 5px 5px 3px 0px #7d7d7d;text-align: center;
-">
-              <div class="effect-wrapper">
-                <div class="thumb"> <img class="img-fullwidth" src="images/courses/2.jpg" alt="project"> </div>
-                <div class="text-holder text-holder-top-right">
-                  <div class="title text-theme-colored2 font-22"> </div>
-                </div>
-              </div>
-              <h3 style="
-    background: #228816;
-    margin-top: 0px;
-    color: #fff !important;    text-align: center;
-">Advanced Yoga Teacher Training - RYT 300</h3>
-              <ul class="list-inline mb-10" style="
-    font-weight: 600;
-    color: #000;
-">
-                <li>Duration :8 weeks</li>
-              </ul>
-              <p>Teachers can register as a RYT® 300 if they have successfully completed a 300-hour yoga teacher training program that is registered with Yoga Alliance. All training hours must come from the same school and multiple trainings cannot be combined to meet the 300-hour Requirement.</p>
-              <ul class="mb-5 font-16">
-                <li></li>
-              </ul>
-              <a class="btn btn-dark btn-theme-colored hvr-bob" href="advanced-yoga-teacher-training-ryt300.html" >Know More..</a> </div>
-          </div>-->
-          <div class="col-xs-12 col-sm-6 col-md-4 mb-30">
-            <div class="box-hover-effect thumb-cross-effect" style="
-    padding: 2px;
-    border: 2px solid #e89090;
-    border-radius: 4px;
-    box-shadow: 5px 5px 3px 0px #7d7d7d;text-align: center;
-">
-              <div class="effect-wrapper">
-                <div class="thumb"> <img class="img-fullwidth" src="images/courses/astanga.jpg" alt="project"> </div>
-                <div class="text-holder text-holder-top-right">
-                  <div class="title text-theme-colored2 font-22"> </div>
-                </div>
-              </div>
-              <h3 style="
-    background: #228816;
-    margin-top: 0px;
-    color: #fff !important;    text-align: center;padding:5px 0;
-">Asthanga Vinyasa/Power Yoga</h3>
-              <ul class="list-inline mb-10" style="
-    font-weight: 600;
-    color: #000;
-">
-                <li>Duration :4 days</li>
-              </ul>
-              <p>This dynamic, physically demanding practice synchronizes breath and movement to produce an internal heat designed to purify the body. Ashtanga yoga, with its many vinyasas, is great for building core strength and toning the body.</p>
-              <br/>
-              <ul class="mb-5 font-16">
-                <li></li>
-              </ul>
-              <a class="btn btn-dark btn-theme-colored hvr-bob" href="asthanga-vinyasa-power-yoga-teacher-training.html">Know More..</a> </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 mb-30">
-            <div class="box-hover-effect thumb-cross-effect" style="
-    padding: 2px;
-    border: 2px solid #e89090;
-    border-radius: 4px;
-    box-shadow: 5px 5px 3px 0px #7d7d7d;text-align: center;
-">
-              <div class="effect-wrapper">
-                <div class="thumb"> <img class="img-fullwidth" src="images/courses/hatha1.jpg" alt="project"> </div>
-                <div class="text-holder text-holder-top-right">
-                  <div class="title text-theme-colored2 font-22"> </div>
-                </div>
-              </div>
-              <h3 style="
-    background: #228816;
-    margin-top: 0px;
-    color: #fff !important;    text-align: center;padding:5px 0;
-">Hatha Yoga </h3>
-              <ul class="list-inline mb-10" style="
-    font-weight: 600;
-    color: #000;
-">
-               <li>Duration :2 Weeks</li>
-              </ul>
-              <p>Haṭha yoga is a branch of yoga. The Sanskrit word हठ haṭha literally means "force" and thus alludes to a system of physical techniques.The six main variations of yoga in Hindu philosophy are raja, karma, jnana, bhakti, tantra, and hatha..<br></p>
-              <br/>
-              <ul class="mb-5 font-16">
-                <li></li>
-              </ul>
-              <a class="btn btn-dark btn-theme-colored hvr-bob" href="prenatal-yoga-teacher-training.html" >Know More..</a> </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 mb-30">
-            <div class="box-hover-effect thumb-cross-effect" style="
-    padding: 2px;
-    border: 2px solid #e89090;
-    border-radius: 4px;
-    box-shadow: 5px 5px 3px 0px #7d7d7d;text-align: center;
-">
-              <div class="effect-wrapper">
-                <div class="thumb"> <img class="img-fullwidth" src="images/courses/meditation1.jpg" alt="project"> </div>
-                <div class="text-holder text-holder-top-right">
-                  <div class="title text-theme-colored2 font-22"> </div>
-                </div>
-              </div>
-              <h3 style="
-    background: #228816;
-    margin-top: 0px;
-    color: #fff !important;    text-align: center;padding:5px 0;
-">Meditation </h3>
-              <ul class="list-inline mb-10" style="
-    font-weight: 600;
-    color: #000;
-">
-                <li>Duration :4 Days</li>
-              </ul>
-              <p>Meditation is a practice where an individual uses a technique – such as mindfulness, or focusing the mind on a particular object, thought, or activity – to train attention and awareness, and achieve a mentally clear and emotionally calm and stable state.Meditation is practiced in numerous religious traditions. </p>
-              <br/>
-              <br/>
-              <br/>
-              <ul class="mb-5 font-16">
-                <li></li>
-              </ul>
-              <a class="btn btn-dark btn-theme-colored hvr-bob" href="aerial-acro-yoga-teacher-training.html" >Know More..</a> </div>
-          </div>
-        </div>
-        <div class="row">
-          
-          <div class="col-xs-12 col-sm-6 col-md-4 mb-30">
-            <div class="box-hover-effect thumb-cross-effect" style="
-    padding: 2px;
-    border: 2px solid #e89090;
-    border-radius: 4px;
-    box-shadow: 5px 5px 3px 0px #7d7d7d;text-align: center;
-">
-              <div class="effect-wrapper">
-                <div class="thumb"> <img class="img-fullwidth" src="images/courses/5.jpg" alt="project"> </div>
-                <div class="text-holder text-holder-top-right">
-                  <div class="title text-theme-colored2 font-22"> </div>
-                </div>
-              </div>
-              <h3 style="
-    background: #228816;
-    margin-top: 0px;
-    color: #fff !important;    text-align: center; padding:5px 0;
-">Pranayam </h3>
-              <ul class="list-inline mb-10" style="
-    font-weight: 600;
-    color: #000;
-">
-                <li>Duration :4 days</li>
-              </ul>
-              <p>Prāṇāyāma (Devanagari: प्राणायाम prāṇāyāma) is the practice of breath control in yoga. In modern yoga as exercise, it consists of synchronising the breath with movements between asanas, , but is also a distinct breathing exercise on its own, usually practised after asanas.</br>it meant the complete suspension of breathing.</p>
-              <ul class="mb-0 font-14">
-                <!-- <li>Eligibility Criteria:
-                  1 Year Minimum Yoga Practice</li><br> -->
-              </ul>
-              <a class="btn btn-dark btn-theme-colored hvr-bob" href="pilates-teacher-training.html" >Know More..</a> </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 mb-30">
-            <div class="box-hover-effect thumb-cross-effect" style="
-    padding: 2px;
-    border: 2px solid #e89090;
-    border-radius: 4px;
-    box-shadow: 5px 5px 3px 0px #7d7d7d;text-align: center;
-">
-              <div class="effect-wrapper">
-                <div class="thumb"> <img class="img-fullwidth" src="images/courses/6.jpg" alt="project"> </div>
-                <div class="text-holder text-holder-top-right">
-                  <div class="title text-theme-colored2 font-22"> </div>
-                </div>
-              </div>
-              <h3 style="
-    background: #228816;
-    margin-top: 0px;
-    color: #fff !important;    text-align: center;padding:5px 0;padding:5px 0;
-">YIN Yoga </h3>
-              <ul class="list-inline mb-10" style="
-    font-weight: 600;
-    color: #000;
-">
-                 <li>Duration :4 days</li>
-              </ul>
-              <p>Yin yoga is a slow-paced style of yoga with postures, or asanas, that are held for longer periods of time. . Learn how to set-up and structure a themed 60/90-minute class. This training gives you the tools and materials to begin teaching a basic Yin Class. We cover breath-work, meditation, and mindfulness as well. </p>
-              <ul class="mb-5 font-16">
-                <li></li>
-              </ul>
-              <a href="#" class="btn btn-dark btn-theme-colored hvr-bob">Know More..</a> </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 mb-30">
-            <div class="box-hover-effect thumb-cross-effect" style="
-    padding: 2px;
-    border: 2px solid #e89090;
-    border-radius: 4px;
-    box-shadow: 5px 5px 3px 0px #7d7d7d;text-align: center;
-">
-              <div class="effect-wrapper">
-                <div class="thumb"> <img class="img-fullwidth" src="images/courses/8.jpg" alt="project"> </div>
-                <div class="text-holder text-holder-top-right">
-                  <div class="title text-theme-colored2 font-22"> </div>
-                </div>
-              </div>
-              <h3 style="
-    background: #228816;
-    margin-top: 0px;
-    color: #fff !important;    text-align: center;padding:5px 0;
-">Therapetic Yoga </h3>
-              <ul class="list-inline mb-10" style="
-    font-weight: 600;
-    color: #000;
-">
-               <li>Duration :4 days</li>
-              </ul>
-              <p>Therapeutic Yoga combines restorative yoga, gentle yoga, breathwork, hands-on healing, and guided meditation techniques in such a way that it is an excellent choice for those who need something gentle yet effective for bringing the body into balance and reducing stress.<br></p>
-              <br/>
-              <ul class="mb-5 font-16">
-                <li></li>
-              </ul>
-              <a class="btn btn-dark btn-theme-colored hvr-bob" href="therapetic-yoga-teacher-training.html" >Know More..</a> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+      </section>
+
+
+
   <!-- Section: opening -->
   <section class="divider parallax" data-bg-img="images/bg/bg7.jpg">
     <div class="container pt-0 pb-0">
