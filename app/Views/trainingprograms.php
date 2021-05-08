@@ -234,8 +234,8 @@
               <div class="col-xs-12 col-sm-6 col-md-3 mb-30">
                 <div class="box-hover-effect thumb-cross-effect" style="padding: 2px;border: 2px solid #e89090;border-radius: 4px;box-shadow: 5px 5px 3px 0px #7d7d7d;text-align: center;">
                   <div class="effect-wrapper">
-                    <div class="thumb">
-                      <img class="img-fullwidth" src="<?=site_url("images/courses/1.jpg")?>" alt="project">
+                    <div class="thumb" style="width:250px; height:250px;">
+                      <img class="img-fullwidth" src="<?=site_url("images/courses/".$courseData['image']."")?>" alt="project">
                     </div>
                     <div class="text-holder text-holder-top-right">
 
@@ -250,12 +250,12 @@
                   <li>|</li>-->
                     <li>Duration :<?=$courseData['duration']?></li>
                   </ul>
-                  <p style="height:280px;text-overflow: ellipsis;overflow: hidden;"><?=$courseData['description']?></p>
+                  <p style="height:180px;text-overflow: ellipsis;overflow: hidden;"><?=$courseData['description']?></p>
                   <ul class="mb-5 font-16">
                     <li></li>
                   </ul>
                   <a class="btn btn-dark btn-theme-colored hvr-bob"
-                    href="<?=site_url("yoga-teacher-training-ryt200.html")?>">Know
+                    href="<?=site_url("/home/detailPage/".$courseData['id']."")?>">Know
                     More..</a>
 
                 </div>
