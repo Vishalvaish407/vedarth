@@ -188,9 +188,11 @@
     </div>
     <div id="disable-preloader" class="btn btn-default btn-sm">Disable Preloader</div>
   </div>-->
+  
 
         <!-- Header -->
         <?=$this->include("components/Header") ?>
+    
         <!-- Start main-content -->
         <div class="main-content">
             <!-- Section: home -->
@@ -377,10 +379,13 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="p-40 bg-white">
+                        <?php if($success){ ?>
+                          <h2 class="mt-0"><span class="text-theme-colored">Thank for registering with this course.</span></h2>
+                         <?php }?>
                             <h2 class="mt-0"><span class="text-theme-colored">Register Now!</span></h2>
                             <!-- Appointment Form -->
                             <form id="appointment_form" name="appointment_form" class="" method="post"
-                                action="https://bodhiyogainstitute.com/register.php">
+                                action="<?=site_url("/home/courseregister")?>">
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="form-group mb-10">
@@ -400,7 +405,7 @@
                                                 class="form-control" required>
                                         </div>
                                     </div>
-                                    <div class="col-sm-12">
+                                    <!-- <div class="col-sm-12">
                                         <div class="form-group">
                                             <label>Branch</label>
                                             <select name="branch" class="form-control">
@@ -408,35 +413,25 @@
                                                 <option value="Bengaluru">Bengaluru</option>
                                             </select>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="col-sm-12">
                                         <div class="form-group">
                                             <label>Course</label>
-                                            <select name="service" class="form-control">
-                                                <option value="Yoga Classes">Yoga Classes</option>
-                                                <option value="Yoga Teacher Training, -RYT 200">Yoga Teacher Training,
-                                                    -RYT 200</option>
-                                                <option value="Advanced Yoga Teacher Training - RYT 300">Advanced Yoga
-                                                    Teacher Training - RYT 300</option>
-                                                <option value="Asthanga Vinyasa/Power Yoga Teacher Training">Asthanga
-                                                    Vinyasa/Power Yoga Teacher Training</option>
-                                                <option value="Prenatal Yoga Teacher Training">Prenatal Yoga Teacher
-                                                    Training</option>
-                                                <option value="Aerial/Acro Yoga Teacher Training">Aerial/Acro Yoga
-                                                    Teacher Training</option>
-                                                <option value="Pilates Teacher Training">Pilates Teacher Training
-                                                </option>
-                                                <option value="YIN Yoga Teacher Trainin">YIN Yoga Teacher Trainin
-                                                </option>
-                                                <option value="Therapetic Yoga Teacher Training">Therapetic Yoga Teacher
-                                                    Training</option>
+                                            <select name="course" class="form-control">
+                                                <option value="2">Hatha Yoga</option>
+                                                <option value="3">Astanga  yoga</option>
+                                                <option value="4">Meditation</option>
+                                                <option value="5">Pranayama</option>
+                                                <option value="6">Yin Yoga</option>
+                                                <option value="7">Power Yoga</option>
+                                               
                                             </select>
                                         </div>
                                     </div>
 
                                 </div>
                                 <div class="form-group mb-0 mt-20">
-                                    <button type="submit" name="submit" class="btn btn-dark btn-theme-colored">Register
+                                    <button type="submit"  class="btn btn-dark btn-theme-colored">Register
                                         Now</button>
                                 </div>
                             </form>
