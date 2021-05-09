@@ -84,10 +84,10 @@ fbq('track', 'PageView');
 <meta name="author" content="Ajay021000" />
 
 <!-- Page Title -->
-<title>Best Yoga teacher training course in Hyderabad, Bengaluru</title>
+<title>Vedarth Yoga</title>
 <link rel="canonical" href="index.html"/>
 <!-- Favicon and Touch Icons -->
-<link href="images/fav.png" rel="shortcut icon" type="image/png">
+<link href="images/fav.png" rel="shortcut icon" type="image/png" style="width:100px;">
 
 
 
@@ -499,7 +499,7 @@ fbq('track', 'PageView');
 <div class="col-md-12">
 <div class="col-md-3 services-block text-center">
 <h1>4 Weeks 100-Hour Yoga Teacher Training –YTT 100</h1>
-<p><img src="images/trainings/1.png" class="img-responsive" alt="100-hours-4-weeks"></p>
+<p><img src="images\trainings\1.png" class="img-responsive" alt="100-hours-4-weeks"></p>
 <p>Join VedarthYoga Institute for yoga teacher training, this 100-hour course is designed to create awareness of yoga and help you to find joy in your practice at a pace that is convenient for you. </p>
 <p><a href="100hours.html">Read More</a></p>
 </div>
@@ -680,14 +680,14 @@ for Yoga Teachers</span></h2>
             </ul>
           </div>
         </div>
-        <div class="col-md-6">
+        <!-- <div class="col-md-6">
           <h2 class="mt-0 text-white">Upcoming <span class="text-theme-colored">Training</span> Programs</h2>
           <div class="upcoming-event p-30 mb-10 bg-theme-colored-transparent-5">
             <div class="event-thumb pull-right flip sm-pull-none"><img class="" alt="training-1" src="images/about/sq1.jpg"></div>
-            <div class="event-content">
-              <h3 class="mt-0 text-white">Training Programs @ Hyderabad </h3>
-              <h3 class="mt-0 text-white">Nandagiri Hills</h3>
-              <ul class="mb-5 text-white">
+            <div class="event-content"> -->
+              <!-- <h3 class="mt-0 text-white">Training Programs @ Hyderabad </h3>
+              <h3 class="mt-0 text-white">Nandagiri Hills</h3> -->
+              <!-- <ul class="mb-5 text-white">
                 <li><i class="fa fa-calendar-plus-o mr-10"></i>Mar 2021 ( Few Slots left )</li>
                 <li><i class="fa fa-calendar-plus-o mr-10"></i>Apr 2021 ( Registration Open ) </li>
                 <li><i class="fa fa-calendar-plus-o mr-10"></i>May 2021 ( Registration Open ) </li>
@@ -715,7 +715,7 @@ for Yoga Teachers</span></h2>
             </div>
             <div class="clearfix"></div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -868,28 +868,28 @@ for Yoga Teachers</span></h2>
       <div class="section-content">
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
-            <div class="funfact text-center"> <i class="flaticon-yoga-symbol-om text-white"></i>
+            <!-- <div class="funfact text-center"> <i class="flaticon-yoga-symbol-om text-white"></i>
               <h2 data-animation-duration="2000" data-value="60" class="animate-number text-white font-38">0</h2>
               <h5 class="text-white text-uppercase mb-0">Professional Trainers</h5>
-            </div>
+            </div> -->
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
             <div class="funfact text-center"> <i class="flaticon-yoga-symbol-lotus text-white"></i>
-              <h2 data-animation-duration="2000" data-value="40000" class="animate-number text-white font-38">0</h2>
+              <h2 data-animation-duration="500" data-value="1000" class="animate-number text-white font-38">0</h2>
               <h5 class="text-white text-uppercase mb-0">Happy Clients</h5>
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
             <div class="funfact text-center"> <i class="flaticon-yoga-symbol-chakra text-white"></i>
-              <h2 data-animation-duration="2000" data-value="60" class="animate-number text-white font-38">0</h2>
+              <h2 data-animation-duration="2000" data-value="5" class="animate-number text-white font-38">0</h2>
               <h5 class="text-white text-uppercase mb-0">Years of experience</h5>
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3 mb-md-0">
-            <div class="funfact text-center"> <i class="flaticon-yoga-symbol-yoga-1 text-white"></i>
+            <!-- <div class="funfact text-center"> <i class="flaticon-yoga-symbol-yoga-1 text-white"></i>
               <h2 data-animation-duration="2000" data-value="10" class="animate-number text-white font-38">0</h2>
               <h5 class="text-white text-uppercase mb-0">Branches</h5>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -1069,7 +1069,7 @@ for Yoga Teachers</span></h2>
   </section>
   
   <!--start testimonial Section-->
-  <section class="divider parallax layer-overlay overlay-theme-colored2-9" data-bg-img="images/bg/bg12.jpg">
+  <!-- <section class="divider parallax layer-overlay overlay-theme-colored2-9" data-bg-img="images/bg/bg12.jpg">
     <div class="container">
       <div class="section-title text-center">
         <div class="row">
@@ -1133,7 +1133,7 @@ for Yoga Teachers</span></h2>
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- Divider: Clients -->
   <section class="clients">
     <div class="container pt-10 pb-10">
@@ -1364,9 +1364,7 @@ for Yoga Teachers</span></h2>
             <option value="800hour">800-Hour Advanced Yoga Teacher Training</option>
             <option value="poweryoga">Power Yoga Teacher Training</option>
              <option value="Aerial">Aerial/Acro Yoga Yoga Teacher Training</option>
-                   <option value="Pilates">Pilates Yoga Yoga Teacher Training</option>
                     <option value="YIN">YIN Yoga Yoga Teacher Training</option>
-                     <option value="therapeutic">Therapeutic  Yoga Teacher Training</option>
 				</select> 
           </div>
               <div class="form-group">
