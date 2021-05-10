@@ -31,7 +31,7 @@
               <li class="clearfix"> 
                            <div class="value pull-right flip"> 
                 
-                <form  method="post" class="quotationform" action="https://bodhiyogainstitute.com/quotation.php">
+                <form  method="post" class="quotationform" action="<?=site_url("/home/contactdetail")?>">
               <div class="form-group">
             <input  data-validation="custom" data-validation-regexp="^([a-zA-Z\s]+)$"  data-validation-error-msg="Please Enter Name Accepts Alphabets and Spaces Only" type="text" class="form-control"  name="name" placeholder="Name*" >
           </div>
@@ -56,20 +56,20 @@
 				</select>  -->
           </div> 
           <div class="form-group">
-           <select name="training" required>
+           <select name="course" required>
   			 <option value="" >Select*</option>
-             <option value="morningyoga">Morning Yoga Classes</option>
-            <option value="eveningyoga">Evening Yoga Classes</option>
+             <!-- <option value="morningyoga">Morning Yoga Classes</option>
+            <option value="eveningyoga">Evening Yoga Classes</option> -->
   			
-            <option value="200hour">200-Hour Yoga Teacher Training </option>
-            <option value="300hour">300-Hour Advanced Yoga Teacher Training</option>
-            <option value="800hour">800-Hour Advanced Yoga Teacher Training</option>
-            <option value="poweryoga">Power Yoga Teacher Training</option>
-            <option value="Aerial">Hatha Yoga Yoga Teacher Training</option>
-            <option value="Pilates">Pranayama Yoga Teacher Training</option>
-            <option value="YIN">YIN Yoga Yoga Teacher Training</option>
+            <option value="2">Hatha Yoga </option>
+            <option value="3">Astanga  yoga</option>
+            <option value="4">Meditation</option>
+            <option value="5">Pranayama</option>
+            <option value="6">Yin Yoga</option>
+            <option value="7">Power Yoga</option>
+            <!-- <option value="YIN">YIN Yoga Yoga Teacher Training</option>
            
-            <option value="8 Certificates">Meditation </option>
+            <option value="8 Certificates">Meditation </option> -->
 				</select> 
           </div>
               <div class="form-group">

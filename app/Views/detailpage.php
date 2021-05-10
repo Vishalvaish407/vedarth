@@ -380,7 +380,7 @@
                     <div class="col-md-6">
                         <div class="p-40 bg-white">
                         <?php if($success){ ?>
-                          <h2 class="mt-0"><span class="text-theme-colored">Thank for registering with this course.</span></h2>
+                          <h2 class="mt-0"><span class="text-theme-colored">Thank for registering with this course.x</span></h2>
                          <?php }?>
                             <h2 class="mt-0"><span class="text-theme-colored">Register Now!</span></h2>
                             <!-- Appointment Form -->
