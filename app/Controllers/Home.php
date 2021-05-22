@@ -44,6 +44,10 @@ class Home extends BaseController
 		$coursesModel = new \App\Models\CoursesModel();
 		$coursedata = $coursesModel->find($courseId);
         
+		$registrationModel=new\App\Models\registrationModel;
+		$registrationModel->insert(['name'=>$name,'email'=>$email,'phone'=>$phone,'courseid'=>$courseId]);
+		$registrationModelUID = $registrationModel->insertid;
+
 		
 
 		$emailService = service('email');
@@ -74,6 +78,9 @@ class Home extends BaseController
 		$coursesModel = new \App\Models\CoursesModel();
 		$coursedata = $coursesModel->find($courseId);
         
+		$registrationModel=new\App\Models\registrationModel;
+		$registrationModel->insert(['name'=>$name,'email'=>$email,'phone'=>$phone,'courseid'=>$courseId]);
+		$registrationModelUID = $registrationModel->insertid;
 
 		$emailService = service('email');
 		$emailService->setTo($email);
@@ -92,7 +99,7 @@ class Home extends BaseController
 		 else{
 			$success = false;
 			//return $this->redirect(site_url('/Home/detailPage/'.$courseId.''));
-			return view('detailpage',["courseData"=>$coursedata, 'success'=>$success,'adminMail'=>$adminMail]);
+			return view('detailpage',["courseData"=>$coursedata, 'success'=>$success]);
 		
 		}
 		
@@ -121,5 +128,7 @@ class Home extends BaseController
 		
 
 	}
+
+
 	
 }
